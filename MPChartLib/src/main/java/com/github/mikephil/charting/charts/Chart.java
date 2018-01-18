@@ -24,6 +24,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 
+import com.github.mikephil.charting.R;
 import com.github.mikephil.charting.animation.ChartAnimator;
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.animation.EasingFunction;
@@ -143,7 +144,7 @@ public abstract class Chart<T extends ChartData<? extends IDataSet<? extends Ent
     /**
      * text that is displayed when the chart is empty
      */
-    private String mNoDataText = "No chart data available.";
+    private String mNoDataText;
 
     /**
      * Gesture listener for custom callbacks when making gestures on the chart.
@@ -225,6 +226,7 @@ public abstract class Chart<T extends ChartData<? extends IDataSet<? extends Ent
 
         mDescription = new Description();
         mLegend = new Legend();
+        mNoDataText = getContext().getString(R.string.no_data_text);
 
         mLegendRenderer = new LegendRenderer(mViewPortHandler, mLegend);
 
