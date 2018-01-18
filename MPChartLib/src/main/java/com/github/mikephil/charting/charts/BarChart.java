@@ -39,11 +39,11 @@ public class BarChart extends BarLineChartBase<BarData> implements BarDataProvid
     private boolean mFitBars = false;
 
     public BarChart(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public BarChart(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public BarChart(Context context, AttributeSet attrs, int defStyle) {

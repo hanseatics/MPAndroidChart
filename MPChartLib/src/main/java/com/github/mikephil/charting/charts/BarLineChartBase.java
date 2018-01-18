@@ -187,7 +187,7 @@ public abstract class BarLineChartBase<T extends BarLineScatterCandleBubbleData<
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        if (mData == null)
+        if (isEmpty())
             return;
 
         long starttime = System.currentTimeMillis();
