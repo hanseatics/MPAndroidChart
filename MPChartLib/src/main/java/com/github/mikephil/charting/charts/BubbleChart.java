@@ -19,11 +19,11 @@ import com.github.mikephil.charting.renderer.BubbleChartRenderer;
 public class BubbleChart extends BarLineChartBase<BubbleData> implements BubbleDataProvider {
 
     public BubbleChart(Context context) {
-        super(context);
+        super(context, null);
     }
 
     public BubbleChart(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public BubbleChart(Context context, AttributeSet attrs, int defStyle) {

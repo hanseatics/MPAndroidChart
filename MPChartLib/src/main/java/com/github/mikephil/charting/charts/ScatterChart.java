@@ -18,11 +18,11 @@ import com.github.mikephil.charting.renderer.ScatterChartRenderer;
 public class ScatterChart extends BarLineChartBase<ScatterData> implements ScatterDataProvider {
 
     public ScatterChart(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public ScatterChart(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public ScatterChart(Context context, AttributeSet attrs, int defStyle) {

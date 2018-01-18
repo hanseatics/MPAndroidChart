@@ -50,11 +50,11 @@ public abstract class PieRadarChartBase<T extends ChartData<? extends IDataSet<?
     protected float mMinOffset = 0.f;
 
     public PieRadarChartBase(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public PieRadarChartBase(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public PieRadarChartBase(Context context, AttributeSet attrs, int defStyle) {
