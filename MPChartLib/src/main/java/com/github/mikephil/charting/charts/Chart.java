@@ -182,14 +182,16 @@ public abstract class Chart<T extends ChartData<? extends IDataSet<? extends Ent
      * default constructor for initialization in code
      */
     public Chart(Context context) {
-        this(context, null);
+        super(context);
+        init();
     }
 
     /**
      * constructor for initialization in xml
      */
     public Chart(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
+        init();
     }
 
     /**

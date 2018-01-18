@@ -29,11 +29,11 @@ import com.github.mikephil.charting.utils.Utils;
 public class HorizontalBarChart extends BarChart {
 
     public HorizontalBarChart(Context context) {
-        this(context, null);
+        super(context);
     }
 
     public HorizontalBarChart(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
     }
 
     public HorizontalBarChart(Context context, AttributeSet attrs, int defStyle) {

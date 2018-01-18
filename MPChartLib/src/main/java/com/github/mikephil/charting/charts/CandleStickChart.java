@@ -16,11 +16,11 @@ import com.github.mikephil.charting.renderer.CandleStickChartRenderer;
 public class CandleStickChart extends BarLineChartBase<CandleData> implements CandleDataProvider {
 
     public CandleStickChart(Context context) {
-        this(context, null);
+        super(context);
     }
 
     public CandleStickChart(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
     }
 
     public CandleStickChart(Context context, AttributeSet attrs, int defStyle) {

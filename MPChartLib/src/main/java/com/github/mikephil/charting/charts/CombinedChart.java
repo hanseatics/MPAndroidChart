@@ -56,11 +56,11 @@ public class CombinedChart extends BarLineChartBase<CombinedData> implements Com
     }
 
     public CombinedChart(Context context) {
-        this(context, null);
+        super(context);
     }
 
     public CombinedChart(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
     }
 
     public CombinedChart(Context context, AttributeSet attrs, int defStyle) {

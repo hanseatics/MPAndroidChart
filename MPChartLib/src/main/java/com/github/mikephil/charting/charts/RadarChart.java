@@ -68,11 +68,11 @@ public class RadarChart extends PieRadarChartBase<RadarData> {
     protected XAxisRendererRadarChart mXAxisRenderer;
 
     public RadarChart(Context context) {
-        this(context, null);
+        super(context);
     }
 
     public RadarChart(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
     }
 
     public RadarChart(Context context, AttributeSet attrs, int defStyle) {

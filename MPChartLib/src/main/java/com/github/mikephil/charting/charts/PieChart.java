@@ -95,11 +95,11 @@ public class PieChart extends PieRadarChartBase<PieData> {
     protected float mMaxAngle = 360f;
 
     public PieChart(Context context) {
-        this(context, null);
+        super(context);
     }
 
     public PieChart(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
     }
 
     public PieChart(Context context, AttributeSet attrs, int defStyle) {

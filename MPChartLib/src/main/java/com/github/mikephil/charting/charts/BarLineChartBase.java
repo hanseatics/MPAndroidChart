@@ -136,16 +136,16 @@ public abstract class BarLineChartBase<T extends BarLineScatterCandleBubbleData<
     // /** the approximator object used for data filtering */
     // private Approximator mApproximator;
 
-    public BarLineChartBase(Context context) {
-        this(context, null);
+    public BarLineChartBase(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
     }
 
     public BarLineChartBase(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
     }
 
-    public BarLineChartBase(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
+    public BarLineChartBase(Context context) {
+        super(context);
     }
 
     @Override

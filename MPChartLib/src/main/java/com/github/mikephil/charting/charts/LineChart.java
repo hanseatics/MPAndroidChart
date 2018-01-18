@@ -16,11 +16,11 @@ import com.github.mikephil.charting.renderer.LineChartRenderer;
 public class LineChart extends BarLineChartBase<LineData> implements LineDataProvider {
 
     public LineChart(Context context) {
-        this(context, null);
+        super(context);
     }
 
     public LineChart(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
     }
 
     public LineChart(Context context, AttributeSet attrs, int defStyle) {
